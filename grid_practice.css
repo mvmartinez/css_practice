@@ -1,5 +1,56 @@
+body{
+  color: whitesmoke;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
 .box{
-  width: 40%;
-  height: 300px;
-  border: 3px dotted dodgerblue;
+  display: grid;
+  grid-template:
+  'nav nav nav nav'
+  'head head head head'
+  'bigarticle article1 article1 article1'
+  'bigarticle article2 article2 article2'
+  'foot foot foot foot';
+
+  grid-gap: 1rem;
+  padding: 10px;
+}
+
+.grid_box{
+  background-color: #146b08;
+  border: 3px dashed #59a050;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar{
+  grid-area: nav;
+}
+.header{
+  grid-area: head;
+}
+.main{
+  grid-area: bigarticle;
+  padding: 0 1rem;
+}
+.right{
+  grid-area: article1;
+}
+.left{
+  grid-area: article2;
+}
+.footer{
+grid-area: foot;
+}
+
+
+.vitas{
+  margin: auto;
+  text-align: center;
+  padding: 20% 0;
+}
+
+.side-vid{
+  margin: auto;
+  text-align: center;
+  padding: 2% 0;
 }
